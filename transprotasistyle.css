@@ -1,0 +1,241 @@
+:root {
+  --primary: rgb(4, 70, 176);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  padding: 30px 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: white;
+}
+
+.navbar .navbar-logo {
+  font-weight: bold;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  font-weight: bold;
+  font-size: 40px;
+  font-style: italic;
+  color: var(--primary);
+}
+
+.navbar .navbar-tengah a {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+}
+
+.isi {
+  padding: 30px 3%;
+}
+/* Isi awal */
+.isi .awal {
+  display: block;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.isi .judul {
+  font-weight: bold;
+  font-size: 45px;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.isi .judul span {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.isi .awal p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.isi .awal img {
+  max-width: 23%;
+  border-radius: 20px;
+  height: auto;
+  float: left;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.isi .awal span {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/* Isi ke 2 */
+.kedua .judul {
+  margin-bottom: 30px;
+}
+
+.kedua .kotak {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.kedua .kotak div {
+  border-radius: 10px;
+  border: solid 1px;
+  height: 150px;
+  width: 300px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.kedua .kotak div p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Isi ke tiga */
+.judul {
+  margin-top: 30px;
+}
+
+.ketiga span {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.ketiga p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.isi .ketiga {
+  display: block;
+  gap: 20px;
+  align-items: flex-end;
+  margin-bottom: 100px;
+}
+
+.isi .ketiga img {
+  max-width: 40%;
+  border-radius: 20px;
+  height: auto;
+  float: right;
+  object-fit: cover;
+  margin-left: 10px;
+}
+.isi .ketiga h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+#menu {
+  display: none;
+}
+
+/* Responsiv */
+/* Laptop */
+@media (max-width: 1440px) {
+  html {
+    font-size: 85%;
+  }
+
+  .isi .awal,
+  .isi .ketiga,
+  .isi .keempat {
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+    display: flex;
+  }
+  .judul {
+    text-align: left;
+  }
+  .isi .awal img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .isi .awal img,
+  .isi .ketiga img {
+    max-width: 50%;
+    margin: 0 auto; /* Pusatkan gambar */
+    float: none; /* Hapus floating */
+  }
+}
+/* hp */
+@media (max-width: 900px) {
+  .navbar .navbar-tengah {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  .isi .judul {
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+  }
+  .navbar .navbar-logo {
+    font-weight: bold;
+    font-size: 35px;
+    font-style: italic;
+  }
+  .navbar .navbar-logo span {
+    font-weight: bold;
+    font-size: 35px;
+    font-style: italic;
+  }
+  .isi .awal p {
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .isi .ketiga p {
+    text-align: justify;
+    font-size: 18px;
+  }
+  .isi .awal img {
+    max-width: 100%;
+    border-radius: 20px;
+    height: auto;
+    float: left;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .isi .ketiga img {
+    max-width: 100%;
+    border-radius: 20px;
+    height: auto;
+    float: left;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+}
