@@ -183,9 +183,7 @@ body {
 
 /* Responsiv */
 @media (max-width: 1440px) {
-  html {
-    font-size: 85%;
-  }
+
 
   .isi .awal,
   .isi .ketiga,
@@ -201,12 +199,12 @@ body {
 
   .isi .awal img,
   .isi .ketiga img {
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto; /* Pusatkan gambar */
     float: none; /* Hapus floating */
   }
   .isi .keempat img {
-    max-width: 50%;
+    max-width: 30%;
     margin: 0 auto; /* Pusatkan gambar */
     float: none; /* Hapus floating */
   }
