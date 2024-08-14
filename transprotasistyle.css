@@ -165,8 +165,41 @@ body {
 }
 
 
+.fa-solid{
+  font-size: 23px;
+}
+
 #menu {
   display: none;
+}
+.kelima .versus{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.kelima .versus img{
+  max-width: 30%;
+  border-radius: 30px;
+
+}
+.kelima .versus p{
+  font-weight: bold;
+  color: black;
+  font-style: italic;
+  font-size: 50px;
+}
+.kelima .versus span{
+  font-weight: bold;
+  color: var(--primary);
+  font-style: italic;
+  font-size: 50px;
+}
+.kelima p{
+  font-size: 20px;
+  text-align: justify;
 }
 
 /* Responsiv */
@@ -249,6 +282,18 @@ body {
     float: left;
     object-fit: cover;
     margin-right: 10px;
+  }
+  .kelima .versus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .kelima .versus img{
+    max-width: 100%;
+    border-radius: 30px;
+  
   }
 
 }
