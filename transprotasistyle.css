@@ -49,6 +49,7 @@ body {
 .isi {
   padding: 30px 3%;
 }
+
 /* Isi awal */
 .isi .awal {
   display: block;
@@ -117,6 +118,16 @@ body {
   font-weight: bold;
   margin: 0;
 }
+.penghantar{
+  font-size: 20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.penghantar span{
+  color: var(--primary);
+  font-weight: bold;
+}
 
 /* Isi ke tiga */
 .judul {
@@ -164,7 +175,9 @@ body {
   html {
     font-size: 85%;
   }
-
+  .penjelasan{
+    margin-top: 10px
+  }
   .isi .awal,
   .isi .ketiga,
   .isi .keempat {
