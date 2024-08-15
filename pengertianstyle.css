@@ -179,6 +179,9 @@ body {
 #menu {
   display: none;
 }
+#menu:hover{
+  cursor: pointer;
+}
 /* Dark Light Mode */
 body.styledarkmode {
   background-color: black;
@@ -215,6 +218,10 @@ footer i{
   font-weight: bold;
   color: black;
 }
+.styledarkmode footer i {
+  color: white; 
+}
+
 
 /* Responsiv */
 @media (max-width: 1440px) {

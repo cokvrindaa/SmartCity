@@ -6,29 +6,30 @@ const dropdown = document.getElementById("dropdown");
 const linkkotaka = document.getElementById("kotaklinka");
 const linkkotakb = document.getElementById("kotaklinkb");
 const linkkotakc = document.getElementById("kotaklinkc");
-
+const logoig = document.getElementById("logoig");
+const versus = document.getElementById("versus");
 function klikmodegelap() {
   body.classList.add("styledarkmode");
   navbar.classList.add("styledarkmode");
-  dropdown.classList.add("styledarkmode")
-  dropdown.classList.add("styledarkmode")
-  linkkotaka.classList.add("styledarkmode")
-  linkkotakb.classList.add("styledarkmode")
-  linkkotakc.classList.add("styledarkmode")
-
+  dropdown.classList.add("styledarkmode");
+  dropdown.classList.add("styledarkmode");
+  linkkotaka.classList.add("styledarkmode");
+  linkkotakb.classList.add("styledarkmode");
+  linkkotakc.classList.add("styledarkmode");
+  versus.style.color = "white"
 }
 function klikmodeterang() {
   body.classList.remove("styledarkmode");
   navbar.classList.remove("styledarkmode");
-  dropdown.classList.remove("styledarkmode")
-  linkkotaka.classList.remove("styledarkmode")
-  linkkotakb.classList.remove("styledarkmode")
-  linkkotakc.classList.remove("styledarkmode")
+  dropdown.classList.remove("styledarkmode");
+  linkkotaka.classList.remove("styledarkmode");
+  linkkotakb.classList.remove("styledarkmode");
+  linkkotakc.classList.remove("styledarkmode");
 }
-menu.addEventListener("click", function(){
-  if (dropdown.style.display === 'none' ) {
-    dropdown.style.display = 'block';
+menu.addEventListener("click", function () {
+  if (dropdown.style.display === "none") {
+    dropdown.style.display = "block";
   } else {
-    dropdown.style.display = 'none';
+    dropdown.style.display = "none";
   }
-})
+});

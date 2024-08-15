@@ -7,109 +7,149 @@
     <link rel="stylesheet" href="transprotasistyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script
+    src="https://kit.fontawesome.com/1897315b86.js"
+    crossorigin="anonymous"
+  ></script>
   </head>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-logo">
-      <p>Smart<span>City</span></p>
-    </div>
-    <div class="navbar-tengah">
-      <a href="index.html">Pengertian</a>
-      <a href="Transprortasi.html">Transprotasi</a>
-      <i data-feather="moon"></i>
-      <i data-feather="sun"></i>
-    </div>
-    <i data-feather="menu" id="menu"></i>
-  </nav>
-  <!-- Isi -->
-  <div class="isi">
-    <p class="judul">Apa itu Bus Listrik?</p>
-    <div class="awal">
-      <div>
-        <img src="/image/Autobuses_eléctricos_BYD_en_Bogotá.jpg" alt="" />
-        <p class="penjelasan">
-          Singkatnya, Bus listrik adalah bus yang di tenagai oleh listrik,
-          sehingga lebih ramah lingkungan. <span>Menurut wikipedia :</span> Bus
-          Listrik (bahasa Inggris: Electric Bus) adalah kendaraan bus yang dapat
-          menyimpan energi listriknya pada kendaraan itu sendiri atau dapat
-          disuplai terus menerus dari sumber eksternal. Bus listrik menyimpan
-          tenaga listrik yang dibutuhkan di dalam baterai, atau disuplai terus
-          menerus dari sumber eksternal. Sebagian besar bus yang menyimpan
-          listrik adalah bus listrik baterai (yang sebagian besar akan dibahas
-          dalam artikel ini), di mana motor listrik memperoleh energi dari paket
-          baterai terpasang, meskipun contoh mode penyimpanan lain memang ada,
-          seperti gyrobus yang menggunakan penyimpanan flywheel energy storage.
-          Ketika listrik tidak disimpan, listrik akan disuplai melalui kontak
-          dengan sumber daya luar. Misalnya seperti listrik aliran atas seperti
-          di bus troli, atau dengan konduktor non-kontak di tanah, seperti di
-          kendaraan listrik online. Pada tahun 2019, Tiongkok merupakan 99%
-          pengguna terbesar bus listrik didunia dengan lebih dari 421.000 bus
-          listrik yang beroperasi di jalanan dan menguasai 17% penggunaanya
-          sebagai armada transportasi publik didalam negeri Tiongkok.Sebagai
-          perbandingan, Amerika serikat memiliki 300 bus listrik, dan Eropa
-          memiliki 2.250 bus listrik.
-        </p>
-      </div>
-    </div>
-    <div class="kedua">
-      <p class="judul">Apa manfaat dan keuntungan Bus Listrik?</p>
-      <div class="kotak">
-        <div>
-          <i data-feather="command"></i>
-          <p>Ramah Lingkungan</p>
-        </div>
-        <div>
-          <i data-feather="lock"></i>
-          <p>Bebas dari bising suara mesin</p>
-        </div>
-        <div>
-          <i data-feather="trash"></i>
-          <p>Pengisian bahan bakar lebih praktis</p>
-        </div>
-        <div>
-          <i data-feather="wind"></i>
-          <p>Perawatan mudah dan hemat</p>
-        </div>
-      </div>
-    </div>
-    <p class="judul">Apa Perbedaan Bus Listrik dan Bus Biasa?</p>
-    <div class="kelima">
-      <div class="versus">
-        <img src="image/bus-listrik-tmp-bandung_169.jpeg" alt="" />
-        <p>V<span>S</span></p>
-        <img src="image/Autobuses_eléctricos_BYD_en_Bogotá.jpg" alt="" />
-      </div>
-      <div>
-        <h1>1. Kebisingan</h1>
-        <p>
-          Bus listrik lebih senyap daripada bus dengan mesin pembakaran dalam.
-          Ini dapat membantu pengemudi lebih fokus pada jalan dan mendengar apa
-          yang terjadi di kursi belakang.
-        </p>
-        <h1>2. Sumber Tenaga</h1>
-        <p>
-          Bus biasa menggunakan energi listrik yang disimpan dalam baterai
-          sebagai sumber tenaga. Motor listrik pada bus ini digerakkan oleh
-          listrik dari baterai, sehingga tidak memerlukan bahan bakar fosil.
-          Sedangkan bus listrik Menggunakan energi listrik yang disimpan dalam
-          baterai sebagai sumber tenaga. Motor listrik pada bus ini digerakkan
-          oleh listrik dari baterai, sehingga tidak memerlukan bahan bakar
-          fosil.
-        </p>
-        <h1>3. Dampak Lingkungan</h1>
-        <p>
-          Bus biasa menghasilkan emisi gas buang seperti karbon dioksida (CO₂), nitrogen oksida (NOx), dan partikel-partikel lain yang berkontribusi pada polusi udara dan perubahan iklim.Sedangkan bus listrik ramah lingkungan karena tidak menghasilkan emisi gas buang selama beroperasi. Ini membantu mengurangi polusi udara dan gas rumah kaca.
-        </p>
-      </div>
-    </div>
-  </div>
-
   <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-logo">
+        <p>Smart<span>City</span></p>
+      </div>
+      <div class="navbar-tengah">
+        <a href="index.html">Pengertian</a>
+        <a href="Transprortasi.html">Transprotasi</a>
+        <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
+        <i data-feather="sun" onclick="klikmodeterang()"></i>
+      </div>
+      <i data-feather="menu" id="menu"></i>
+    </nav>
+    <nav class="dropdown" id="dropdown">
+      <div class="isidropdown">
+        <a href="index.html">Pengertian</a>
+        <a href="Transprortasi.html">Transprotasi</a>
+        <div class="isidropdown-mode">
+          <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
+          <i data-feather="sun" onclick="klikmodeterang()"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- Isi -->
+    <div class="isi">
+      <p class="judul">Apa itu Bus Listrik?</p>
+      <div class="awal">
+        <div>
+          <img src="/image/Autobuses_eléctricos_BYD_en_Bogotá.jpg" alt="" />
+          <p class="penjelasan">
+            Singkatnya, Bus listrik adalah bus yang di tenagai oleh listrik,
+            sehingga lebih ramah lingkungan.
+            <span>Menurut wikipedia :</span> Bus Listrik (bahasa Inggris:
+            Electric Bus) adalah kendaraan bus yang dapat menyimpan energi
+            listriknya pada kendaraan itu sendiri atau dapat disuplai terus
+            menerus dari sumber eksternal. Bus listrik menyimpan tenaga listrik
+            yang dibutuhkan di dalam baterai, atau disuplai terus menerus dari
+            sumber eksternal. Sebagian besar bus yang menyimpan listrik adalah
+            bus listrik baterai (yang sebagian besar akan dibahas dalam artikel
+            ini), di mana motor listrik memperoleh energi dari paket baterai
+            terpasang, meskipun contoh mode penyimpanan lain memang ada, seperti
+            gyrobus yang menggunakan penyimpanan flywheel energy storage. Ketika
+            listrik tidak disimpan, listrik akan disuplai melalui kontak dengan
+            sumber daya luar. Misalnya seperti listrik aliran atas seperti di
+            bus troli, atau dengan konduktor non-kontak di tanah, seperti di
+            kendaraan listrik online. Pada tahun 2019, Tiongkok merupakan 99%
+            pengguna terbesar bus listrik didunia dengan lebih dari 421.000 bus
+            listrik yang beroperasi di jalanan dan menguasai 17% penggunaanya
+            sebagai armada transportasi publik didalam negeri Tiongkok.Sebagai
+            perbandingan, Amerika serikat memiliki 300 bus listrik, dan Eropa
+            memiliki 2.250 bus listrik.
+          </p>
+        </div>
+      </div>
+      <div class="kedua">
+        <p class="judul">Apa manfaat dan keuntungan Bus Listrik?</p>
+        <div class="kotak">
+          <div>
+            <i data-feather="command"></i>
+            <p>Ramah Lingkungan</p>
+          </div>
+          <div>
+            <i data-feather="lock"></i>
+            <p>Bebas dari bising suara mesin</p>
+          </div>
+          <div>
+            <i data-feather="trash"></i>
+            <p>Pengisian bahan bakar lebih praktis</p>
+          </div>
+          <div>
+            <i data-feather="wind"></i>
+            <p>Perawatan mudah dan hemat</p>
+          </div>
+        </div>
+      </div>
+      <p class="judul">Apa Perbedaan Bus Listrik dan Bus Biasa?</p>
+      <div class="kelima">
+        <div class="versus">
+          <img src="image/bus-listrik-tmp-bandung_169.jpeg" alt="" />
+          <p>V<span>S</span></p>
+          <img src="image/Autobuses_eléctricos_BYD_en_Bogotá.jpg" alt="" />
+        </div>
+        <div>
+          <h1>1. Kebisingan</h1>
+          <p>
+            Bus listrik lebih senyap daripada bus dengan mesin pembakaran dalam.
+            Ini dapat membantu pengemudi lebih fokus pada jalan dan mendengar
+            apa yang terjadi di kursi belakang.
+          </p>
+          <h1>2. Sumber Tenaga</h1>
+          <p>
+            Bus biasa menggunakan energi listrik yang disimpan dalam baterai
+            sebagai sumber tenaga. Motor listrik pada bus ini digerakkan oleh
+            listrik dari baterai, sehingga tidak memerlukan bahan bakar fosil.
+            Sedangkan bus listrik Menggunakan energi listrik yang disimpan dalam
+            baterai sebagai sumber tenaga. Motor listrik pada bus ini digerakkan
+            oleh listrik dari baterai, sehingga tidak memerlukan bahan bakar
+            fosil.
+          </p>
+          <h1>3. Dampak Lingkungan</h1>
+          <p>
+            Bus biasa menghasilkan emisi gas buang seperti karbon dioksida
+            (CO₂), nitrogen oksida (NOx), dan partikel-partikel lain yang
+            berkontribusi pada polusi udara dan perubahan iklim.Sedangkan bus
+            listrik ramah lingkungan karena tidak menghasilkan emisi gas buang
+            selama beroperasi. Ini membantu mengurangi polusi udara dan gas
+            rumah kaca.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footeratas" id="footeratas">
+        <a
+          href="https://www.instagram.com/cokvrindaaa88/"
+          id="logoig"
+          class="logoig"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.tiktok.com/@cokvrindaa"
+          ><i class="fa-brands fa-tiktok" id="logotiktok"></i
+        ></a>
+        <a href="https://www.youtube.com/@ohtheneptune"
+          ><i class="fa-brands fa-youtube" id="logoyt"></i
+        ></a>
+        <a href="https://github.com/cokvrindaa"
+          ><i class="fa-brands fa-github" id="logogithub"></i
+        ></a>
+      </div>
+      <p>By Cok Vrinda 2024</p>
+    </footer>
     <script src="index.js"></script>
     <script>
       feather.replace();

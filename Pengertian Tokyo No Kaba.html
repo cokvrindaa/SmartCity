@@ -13,73 +13,96 @@
     />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-logo">
-      <p>Smart<span>City</span></p>
-    </div>
-    <div class="navbar-tengah">
-      <a href="index.html">Pengertian</a>
-      <a href="Transprortasi.html">Transprotasi</a>
-      <i data-feather="moon"></i>
-      <i data-feather="sun"></i>
-    </div>
-    <i data-feather="menu" id="menu"></i>
-  </nav>
-  <!-- Isi -->
-  <div class="isi">
-    <p class="judul">Apa itu Bus Listrik?</p>
-    <div class="awal">
-      <div>
-        <img src="/image/tokyonokabanew.jpg" alt="" />
-        <p class="penjelasan">
-          Tokyo no Kaba, atau "Tokyo's Hippo," adalah bus amfibi yang menjadi
-          salah satu atraksi unik di Tokyo. Bus ini dirancang untuk menjelajahi
-          jalanan sekaligus perairan Tokyo, menawarkan pengalaman yang tidak
-          biasa kepada para penumpangnya. Dengan kemampuannya untuk berubah
-          menjadi kapal, Tokyo no Kaba berlayar di sekitar pulau rekreasi
-          Odaiba, sebuah area populer yang terkenal dengan berbagai tempat
-          hiburan dan pemandangan indah. Bus amfibi ini didesain menyerupai kuda
-          nil (hippo), yang tidak hanya menarik perhatian anak-anak tetapi juga
-          orang dewasa. Perjalanan dimulai dari darat, di mana penumpang bisa
-          menikmati pemandangan kota Tokyo, sebelum bus ini 'melompat' ke air
-          dan berlayar di Teluk Tokyo. Selama di air, penumpang bisa menikmati
-          pemandangan langit kota yang memukau, termasuk gedung-gedung pencakar
-          langit dan jembatan pelabuhan yang ikonik. Tokyo no Kaba bukan hanya
-          sekadar transportasi, tetapi juga merupakan pengalaman wisata yang
-          menggabungkan edukasi dan hiburan. Pemandu wisata di dalam bus
-          memberikan informasi menarik tentang sejarah dan budaya Tokyo, serta
-          penjelasan mengenai ekosistem perairan Tokyo. Ini adalah kegiatan yang
-          sempurna untuk dilakukan bersama keluarga, menawarkan perspektif yang
-          berbeda tentang kota metropolitan ini dari darat dan laut.
-        </p>
-      </div>
-    </div>
-    <div class="kedua">
-      <p class="judul">Apa manfaat dan keuntungan Dari kendaaraan tokyo no kaba?</p>
-      <div class="kotak">
-        <div>
-          <i data-feather="command"></i>
-          <p>Flexibel (bisa daratan dan lautan)</p>
-        </div>
-        <div>
-          <i data-feather="lock"></i>
-          <p>Tampilan yang unik</p>
-        </div>
-        <div>
-          <i data-feather="trash"></i>
-          <p>Bisa sebagai tempat wisata yang unik</p>
-        </div>
-        <div>
-          <i data-feather="wind"></i>
-          <p>Teknologi yang umum di masa mendatang</p>
-        </div>
-      </div>
-    </div>
-
   <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-logo">
+        <p>Smart<span>City</span></p>
+      </div>
+      <div class="navbar-tengah">
+        <a href="index.html">Pengertian</a>
+        <a href="Transprortasi.html">Transprotasi</a>
+        <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
+        <i data-feather="sun" onclick="klikmodeterang()"></i>
+      </div>
+      <i data-feather="menu" id="menu"></i>
+    </nav>
+    <nav class="dropdown" id="dropdown">
+      <div class="isidropdown">
+        <a href="index.html">Pengertian</a>
+        <a href="Transprortasi.html">Transprotasi</a>
+        <div class="isidropdown-mode">
+          <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
+          <i data-feather="sun" onclick="klikmodeterang()"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- Isi -->
+    <div class="isi">
+      <p class="judul">Apa itu Tokyo No Kaba?</p>
+      <div class="awal">
+        <div>
+          <img src="/image/tokyonokabanew.jpg" alt="" />
+          <p class="penjelasan">
+            Tokyo no Kaba, atau "Tokyo's Hippo," adalah bus amfibi yang menjadi
+            salah satu atraksi unik di Tokyo. Bus ini dirancang untuk
+            menjelajahi jalanan sekaligus perairan Tokyo, menawarkan pengalaman
+            yang tidak biasa kepada para penumpangnya. Dengan kemampuannya untuk
+            berubah menjadi kapal, Tokyo no Kaba berlayar di sekitar pulau
+            rekreasi Odaiba, sebuah area populer yang terkenal dengan berbagai
+            tempat hiburan dan pemandangan indah. Bus amfibi ini didesain
+            menyerupai kuda nil (hippo), yang tidak hanya menarik perhatian
+            anak-anak tetapi juga orang dewasa. Perjalanan dimulai dari darat,
+            di mana penumpang bisa menikmati pemandangan kota Tokyo, sebelum bus
+            ini 'melompat' ke air dan berlayar di Teluk Tokyo. Selama di air,
+            penumpang bisa menikmati pemandangan langit kota yang memukau,
+            termasuk gedung-gedung pencakar langit dan jembatan pelabuhan yang
+            ikonik. Tokyo no Kaba bukan hanya sekadar transportasi, tetapi juga
+            merupakan pengalaman wisata yang menggabungkan edukasi dan hiburan.
+            Pemandu wisata di dalam bus memberikan informasi menarik tentang
+            sejarah dan budaya Tokyo, serta penjelasan mengenai ekosistem
+            perairan Tokyo. Ini adalah kegiatan yang sempurna untuk dilakukan
+            bersama keluarga, menawarkan perspektif yang berbeda tentang kota
+            metropolitan ini dari darat dan laut.
+          </p>
+        </div>
+      </div>
+      <div class="kedua">
+        <p class="judul">
+          Apa manfaat dan keuntungan Dari kendaaraan tokyo no kaba?
+        </p>
+        <div class="kotak">
+          <div>
+            <i data-feather="command"></i>
+            <p>Flexibel (bisa daratan dan lautan)</p>
+          </div>
+          <div>
+            <i data-feather="lock"></i>
+            <p>Tampilan yang unik</p>
+          </div>
+          <div>
+            <i data-feather="trash"></i>
+            <p>Bisa sebagai tempat wisata yang unik</p>
+          </div>
+          <div>
+            <i data-feather="wind"></i>
+            <p>Teknologi yang umum di masa mendatang</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footeratas" id="footeratas">  
+        <a href="https://www.instagram.com/cokvrindaaa88/" id="logoig" class="logoig"><i class="fa-brands fa-instagram" ></i></a>
+        <a href="https://www.tiktok.com/@cokvrindaa"><i class="fa-brands fa-tiktok" id="logotiktok"></i></a>
+        <a href="https://www.youtube.com/@ohtheneptune"><i class="fa-brands fa-youtube" id="logoyt"></i></a>
+        <a href="https://github.com/cokvrindaa"><i class="fa-brands fa-github" id="logogithub"></i></a>
+      </div>
+      <p>By Cok Vrinda 2024</p>
+    </footer>
     <script>
       feather.replace();
     </script>
+    <script src="index.js"></script>
   </body>
 </html>

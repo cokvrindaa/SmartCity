@@ -20,17 +20,28 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
       <div class="navbar-logo">
         <p>Smart<span>City</span></p>
       </div>
       <div class="navbar-tengah">
         <a href="index.html">Pengertian</a>
         <a href="Transprortasi.html">Transprotasi</a>
-        <i data-feather="moon"></i>
-        <i data-feather="sun"></i>
+        <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
+        <i data-feather="sun" onclick="klikmodeterang()"></i>
       </div>
       <i data-feather="menu" id="menu"></i>
+    </nav>
+    <nav class="dropdown" id="dropdown">
+      <div class="isidropdown">
+        <a href="index.html">Pengertian</a>
+        <a href="Transprortasi.html">Transprotasi</a>
+        <div class="isidropdown-mode">
+          <i data-feather="moon" id="modegelap" onclick="klikmodegelap()"></i>
+          <i data-feather="sun" onclick="klikmodeterang()"></i>
+        </div>
+      </div>
     </nav>
     <!-- Isi -->
     <div class="isi">
@@ -48,7 +59,31 @@
             <span>dioperasikan oleh PT MRT Jakarta (Perseroda)</span>, badan
             usaha milik daerah DKI Jakarta. Jalur yang telah beroperasi saat ini
             merupakan jalur sepanjang 15,7 km yang menghubungkan Stasiun Lebak
-            Bulus dengan Stasiun Bundaran HI
+            Bulus dengan Stasiun Bundaran HILayanan MRT Jakarta secara resmi
+            mulai beroperasi pada tanggal 24 Maret 2019, menandai tonggak
+            sejarah sebagai layanan MRT pertama yang beroperasi di Indonesia.
+            Sistem transportasi ini dioperasikan oleh PT MRT Jakarta
+            (Perseroda), sebuah badan usaha milik daerah yang berada di bawah
+            kendali Pemerintah Provinsi DKI Jakarta. PT MRT Jakarta bertanggung
+            jawab atas pengelolaan dan pengembangan jaringan MRT, serta
+            memastikan bahwa layanan yang diberikan tetap efisien dan dapat
+            diandalkan oleh masyarakat. Rute yang telah beroperasi saat ini
+            mencakup 13 stasiun, dimulai dari Stasiun Lebak Bulus, Fatmawati,
+            Cipete Raya, Haji Nawi, Blok A, Blok M, ASEAN, Senayan, Istora
+            Mandiri, Bendungan Hilir, Setiabudi Astra, Dukuh Atas, hingga
+            berakhir di Stasiun Bundaran HI. Jalur ini dioperasikan dengan
+            kereta yang dapat menampung ribuan penumpang per hari, dengan
+            frekuensi kedatangan yang teratur setiap beberapa menit sekali,
+            sehingga memberikan kemudahan akses bagi para penumpang. Proyek MRT
+            Jakarta tidak berhenti pada jalur yang telah beroperasi saat ini.
+            Pemerintah DKI Jakarta bersama PT MRT Jakarta terus melanjutkan
+            pembangunan fase berikutnya, yang meliputi perluasan jalur ke arah
+            utara, menghubungkan pusat Jakarta hingga ke wilayah Kota Tua dan
+            Ancol. Fase pengembangan lainnya juga direncanakan untuk menambah
+            jalur baru yang menghubungkan wilayah Timur dan Barat Jakarta. Hal
+            ini bertujuan untuk semakin memperluas jangkauan MRT serta mendukung
+            integrasi transportasi massal dengan moda transportasi lain, seperti
+            bus TransJakarta dan KRL Commuter Line.
           </p>
         </div>
       </div>
@@ -128,9 +163,30 @@
         </div>
       </div>
     </div>
-
+    <footer>
+      <div class="footeratas" id="footeratas">
+        <a
+          href="https://www.instagram.com/cokvrindaaa88/"
+          id="logoig"
+          class="logoig"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.tiktok.com/@cokvrindaa"
+          ><i class="fa-brands fa-tiktok" id="logotiktok"></i
+        ></a>
+        <a href="https://www.youtube.com/@ohtheneptune"
+          ><i class="fa-brands fa-youtube" id="logoyt"></i
+        ></a>
+        <a href="https://github.com/cokvrindaa"
+          ><i class="fa-brands fa-github" id="logogithub"></i
+        ></a>
+      </div>
+      <p>By Cok Vrinda 2024</p>
+    </footer>
+    <script src="index.js"></script>
     <script>
       feather.replace();
     </script>
+    <script src="index.js"></script>
   </body>
 </html>
