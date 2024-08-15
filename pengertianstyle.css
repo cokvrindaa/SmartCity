@@ -60,7 +60,7 @@ body {
 .isi .judul {
   font-weight: bold;
   font-size: 45px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 15px;
 }
 
@@ -179,7 +179,7 @@ body {
 #menu {
   display: none;
 }
-
+/* Dark Light Mode */
 body.styledarkmode {
   background-color: black;
   color: white;
@@ -190,6 +190,32 @@ body.styledarkmode {
 .navbar.styledarkmode a {
   color: white;
 }
+.dropdown.styledarkmode {
+  background-color: black;
+}
+.dropdown.styledarkmode a {
+  color: white;
+}
+/* Footer */
+footer{
+  padding: 30px 3%;
+  display: flex;
+  flex-direction: column;
+}
+.footeratas{
+  display: flex;
+  gap: 10px;
+}
+footer p{
+  font-size: 20px;
+  font-weight: bold;
+}
+footer i{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
 /* Responsiv */
 @media (max-width: 1440px) {
   .isi .awal,
@@ -218,13 +244,30 @@ body.styledarkmode {
 }
 /* hp */
 @media (max-width: 900px) {
+  /* Dropdown */
   .dropdown {
     padding: 30px 3%;
     display: flex;
     position: fixed;
-    margin-top: 40px;
+    margin-top: 80px;
     background-color: white;
     display: none;
+    left: 0;
+    right: 0;
+  }
+  .isidropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px ;
+  }
+  .isidropdown a{
+    color: black;
+    font-weight: bold;
+  }
+  .isidropdown-mode{
+    display: flex;
+    flex-direction: row;
   }
   .navbar {
     padding: 20px 3%;
@@ -247,7 +290,7 @@ body.styledarkmode {
   .isi .judul {
     font-weight: bold;
     font-size: 35px;
-    margin-top: 35px;
+    margin-top: 60px;
     margin-bottom: 15px;
   }
   .navbar .navbar-logo {
