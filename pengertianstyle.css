@@ -90,6 +90,7 @@ body {
 }
 .kedua .kotak div {
   border-radius: 10px;
+  padding: 10px;
   border: solid 1px;
   height: 150px;
   width: 300px;
@@ -161,7 +162,7 @@ body {
 #menu {
   display: none;
 }
-#menu:hover{
+#menu:hover {
   cursor: pointer;
 }
 /* Dark Light Mode */
@@ -182,26 +183,26 @@ body.styledarkmode {
   color: white;
 }
 /* Footer */
-footer{
+footer {
   padding: 30px 3%;
   display: flex;
   flex-direction: column;
 }
-.footeratas{
+.footeratas {
   display: flex;
   gap: 10px;
 }
-footer p{
+footer p {
   font-size: 20px;
   font-weight: bold;
 }
-footer i{
+footer i {
   font-size: 20px;
   font-weight: bold;
   color: black;
 }
 .styledarkmode footer i {
-  color: white; 
+  color: white;
 }
 /* Responsiv */
 @media (max-width: 1440px) {
@@ -228,7 +229,7 @@ footer i{
     float: none; /* Hapus floating */
   }
 }
-/* hp */
+/* hp dan tab*/
 @media (max-width: 900px) {
   /* Dropdown */
   .dropdown {
@@ -241,18 +242,18 @@ footer i{
     left: 0;
     right: 0;
   }
-  .isidropdown{
+  .isidropdown {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px ;
+    gap: 10px;
   }
-  .isidropdown a{
+  .isidropdown a {
     color: black;
     font-weight: bold;
     font-size: large;
   }
-  .isidropdown-mode{
+  .isidropdown-mode {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -326,5 +327,16 @@ footer i{
     float: left;
     object-fit: cover;
     margin-right: 10px;
+  }
+}
+@media (min-width: 901px) {
+  .navbar-tengah a:hover {
+    color: var(--primary);
+  }
+  .navbar-tengah #modegelap:hover {
+    color: var(--primary);
+  }
+  .navbar-tengah #modeterang:hover {
+    color: var(--primary);
   }
 }

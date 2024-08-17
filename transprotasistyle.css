@@ -91,6 +91,7 @@ body {
 .kedua .kotak div {
   border-radius: 10px;
   border: solid 1px;
+  padding: 10px;
   height: 150px;
   width: 300px;
   flex-direction: column;
@@ -380,3 +381,16 @@ footer i {
     border-radius: 30px;
   }
 }
+
+@media (min-width: 901px) {
+  .navbar-tengah a:hover{
+    color: var(--primary);
+  }
+  .navbar-tengah #modegelap:hover{
+    color: var(--primary);
+  }
+  .navbar-tengah #modeterang:hover{
+    color: var(--primary);
+  }
+}
+
