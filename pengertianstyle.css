@@ -8,11 +8,11 @@
   padding: 0;
   text-decoration: none;
 }
-
+/* Font Popins */
 body {
   font-family: "Poppins", sans-serif;
 }
-
+/* Navbar Style */
 .navbar {
   padding: 30px 3%;
   display: flex;
@@ -46,9 +46,7 @@ body {
   padding: 10px;
 }
 
-.isi {
-  padding: 30px 3%;
-}
+
 /* Isi awal */
 .isi .awal {
   display: block;
@@ -56,7 +54,9 @@ body {
   align-items: flex-start;
   margin-bottom: 100px;
 }
-
+.isi {
+  padding: 30px 3%;
+}
 .isi .judul {
   font-weight: bold;
   font-size: 45px;
@@ -175,7 +175,7 @@ body {
   object-fit: cover;
   margin-right: 10px;
 }
-
+/* dorpdownmenu */
 #menu {
   display: none;
 }
@@ -271,10 +271,12 @@ footer i{
   .isidropdown a{
     color: black;
     font-weight: bold;
+    font-size: large;
   }
   .isidropdown-mode{
     display: flex;
     flex-direction: row;
+    gap: 10px;
   }
   .navbar {
     padding: 20px 3%;

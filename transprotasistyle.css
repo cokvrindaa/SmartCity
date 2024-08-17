@@ -8,11 +8,11 @@
   padding: 0;
   text-decoration: none;
 }
-
+/* Font Popins */
 body {
   font-family: "Poppins", sans-serif;
 }
-
+/* Navbar Syle */
 .navbar {
   padding: 30px 3%;
   display: flex;
@@ -46,10 +46,6 @@ body {
   padding: 10px;
 }
 
-.isi {
-  padding: 30px 3%;
-}
-
 /* Isi awal */
 .isi .awal {
   display: block;
@@ -57,12 +53,14 @@ body {
   align-items: flex-start;
   margin-bottom: 100px;
 }
-
+.isi {
+  padding: 30px 3%;
+}
 .isi .judul {
   font-weight: bold;
   font-size: 45px;
   margin-top: 100px;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
 .isi .judul span {
@@ -171,9 +169,10 @@ body {
 #menu {
   display: none;
 }
-#menu:hover{
+#menu:hover {
   cursor: pointer;
 }
+/* Isi Ke lima */
 .kelima .versus {
   display: flex;
   flex-direction: row;
@@ -202,6 +201,7 @@ body {
   font-size: 20px;
   text-align: justify;
 }
+/* Darkmode Light Mode */
 body.styledarkmode {
   background-color: black;
   color: white;
@@ -242,34 +242,32 @@ body.styledarkmode {
 .dropdown.styledarkmode a {
   color: white;
 }
-.styledarkmode .kelima .versus p{
+.styledarkmode .kelima .versus p {
   color: white;
 }
 
 /* Footer */
-footer{
+footer {
   padding: 30px 3%;
   display: flex;
   flex-direction: column;
 }
-.footeratas{
+.footeratas {
   display: flex;
   gap: 10px;
 }
-footer p{
+footer p {
   font-size: 20px;
   font-weight: bold;
 }
-footer i{
+footer i {
   font-size: 20px;
   font-weight: bold;
   color: black;
 }
 .styledarkmode footer i {
-  color: white; 
+  color: white;
 }
-
-
 
 /* Responsiv */
 /* Laptop */
@@ -325,10 +323,12 @@ footer i{
   .isidropdown a {
     color: black;
     font-weight: bold;
+    font-size: large;
   }
   .isidropdown-mode {
     display: flex;
     flex-direction: row;
+    gap: 10px;
   }
   .navbar .navbar-tengah {
     display: none;
