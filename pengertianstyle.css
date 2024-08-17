@@ -224,9 +224,7 @@ footer i {
     float: none; /* Hapus floating */
   }
   .isi .keempat img {
-    max-width: 30%;
-    margin: 0 auto; /* Pusatkan gambar */
-    float: none; /* Hapus floating */
+    max-width: 28%;
   }
 }
 /* hp dan tab*/
