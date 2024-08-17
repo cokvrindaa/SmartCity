@@ -1,7 +1,6 @@
 :root {
   --primary: rgb(4, 70, 176);
 }
-
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -25,27 +24,23 @@ body {
   z-index: 9999;
   background-color: white;
 }
-
 .navbar .navbar-logo {
   font-weight: bold;
   font-size: 40px;
   font-style: italic;
 }
-
 .navbar .navbar-logo span {
   font-weight: bold;
   font-size: 40px;
   font-style: italic;
   color: var(--primary);
 }
-
 .navbar .navbar-tengah a {
   font-weight: bold;
   font-size: 20px;
   color: black;
   padding: 10px;
 }
-
 /* Isi awal */
 .isi .awal {
   display: block;
@@ -62,17 +57,14 @@ body {
   margin-top: 100px;
   margin-bottom: 15px;
 }
-
 .isi .judul span {
   font-weight: bold;
   color: var(--primary);
 }
-
 .isi .awal p {
   text-align: justify;
   font-size: 20px;
 }
-
 .isi .awal img {
   max-width: 23%;
   border-radius: 20px;
@@ -85,12 +77,10 @@ body {
   font-weight: bold;
   color: var(--primary);
 }
-
 /* Isi ke 2 */
 .kedua .judul {
   margin-bottom: 30px;
 }
-
 .kedua .kotak {
   display: flex;
   gap: 20px;
@@ -98,7 +88,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .kedua .kotak div {
   border-radius: 10px;
   border: solid 1px;
@@ -110,7 +99,6 @@ body {
   justify-content: center;
   text-align: center;
 }
-
 .kedua .kotak div p {
   font-size: 20px;
   font-weight: bold;
@@ -126,29 +114,24 @@ body {
   color: var(--primary);
   font-weight: bold;
 }
-
 /* Isi ke tiga */
 .judul {
   margin-top: 30px;
 }
-
 .ketiga span {
   color: var(--primary);
   font-weight: bold;
 }
-
 .ketiga p {
   text-align: justify;
   font-size: 20px;
 }
-
 .isi .ketiga {
   display: block;
   gap: 20px;
   align-items: flex-end;
   margin-bottom: 10px;
 }
-
 .isi .ketiga img {
   max-width: 40%;
   border-radius: 20px;
@@ -161,11 +144,9 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .fa-solid {
   font-size: 23px;
 }
-
 #menu {
   display: none;
 }
@@ -245,7 +226,6 @@ body.styledarkmode {
 .styledarkmode .kelima .versus p {
   color: white;
 }
-
 /* Footer */
 footer {
   padding: 30px 3%;
@@ -368,7 +348,6 @@ footer i {
     text-align: justify;
     font-size: 18px;
   }
-
   .isi .ketiga p {
     text-align: justify;
     font-size: 18px;

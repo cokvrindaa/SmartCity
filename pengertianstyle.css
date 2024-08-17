@@ -1,7 +1,6 @@
 :root {
   --primary: rgb(4, 70, 176);
 }
-
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -25,28 +24,23 @@ body {
   z-index: 9999;
   background-color: white;
 }
-
 .navbar .navbar-logo {
   font-weight: bold;
   font-size: 40px;
   font-style: italic;
 }
-
 .navbar .navbar-logo span {
   font-weight: bold;
   font-size: 40px;
   font-style: italic;
   color: var(--primary);
 }
-
 .navbar .navbar-tengah a {
   font-weight: bold;
   font-size: 20px;
   color: black;
   padding: 10px;
 }
-
-
 /* Isi awal */
 .isi .awal {
   display: block;
@@ -63,17 +57,14 @@ body {
   margin-top: 50px;
   margin-bottom: 15px;
 }
-
 .isi .judul span {
   font-weight: bold;
   color: var(--primary);
 }
-
 .isi .awal p {
   text-align: justify;
   font-size: 20px;
 }
-
 .isi .awal img {
   max-width: 40%;
   border-radius: 20px;
@@ -86,12 +77,10 @@ body {
   font-weight: bold;
   color: var(--primary);
 }
-
 /* Isi ke 2 */
 .kedua .judul {
   margin-bottom: 30px;
 }
-
 .kedua .kotak {
   display: flex;
   gap: 20px;
@@ -99,7 +88,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .kedua .kotak div {
   border-radius: 10px;
   border: solid 1px;
@@ -111,35 +99,29 @@ body {
   justify-content: center;
   text-align: center;
 }
-
 .kedua .kotak div p {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
-
 /* Isi ke tiga */
 .judul {
   margin-top: 30px;
 }
-
 .ketiga span {
   color: var(--primary);
   font-weight: bold;
 }
-
 .ketiga p {
   text-align: justify;
   font-size: 20px;
 }
-
 .isi .ketiga {
   display: block;
   gap: 20px;
   align-items: flex-end;
   margin-bottom: 100px;
 }
-
 .isi .ketiga img {
   max-width: 40%;
   border-radius: 20px;
@@ -221,8 +203,6 @@ footer i{
 .styledarkmode footer i {
   color: white; 
 }
-
-
 /* Responsiv */
 @media (max-width: 1440px) {
   .isi .awal,
@@ -236,7 +216,6 @@ footer i{
   .judul {
     text-align: left;
   }
-
   .isi .awal img,
   .isi .ketiga img {
     max-width: 70%;
@@ -316,7 +295,6 @@ footer i{
     text-align: justify;
     font-size: 18px;
   }
-
   .isi .ketiga p {
     text-align: justify;
     font-size: 18px;
